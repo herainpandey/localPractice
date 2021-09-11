@@ -28,6 +28,8 @@ public class StringsPractice {
         }
         if(flag) {
             System.out.println("Yes");
+            System.out.println("this is new add");
+
         }else {
             System.out.println("No");
         }
