@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+  <parameter name="name" value="herain"/>
+  <listeners>
+    <listener class-name="listeners.TestListenerCheck"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="home(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.Day1">
+        <methods>
+          <include name="demo1" invocation-numbers="0"/>
+          <include name="demo4" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- test.Day1 -->
+    </classes>
+  </test> <!-- home(failed) -->
+  <test thread-count="5" verbose="0" name="office(failed)">
+    <parameter name="name" value="himanshu"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.Day2">
+        <methods>
+          <include name="demo3" invocation-numbers="0"/>
+          <include name="demo1" invocation-numbers="0"/>
+          <include name="demo4" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- test.Day2 -->
+    </classes>
+  </test> <!-- office(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
