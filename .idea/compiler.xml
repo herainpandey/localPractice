@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="RahulShatty.java" />
+        <module name="localPractice" />
       </profile>
     </annotationProcessing>
   </component>
